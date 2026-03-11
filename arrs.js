@@ -1,5 +1,4 @@
-const arr = [1, 2, 3, 4, 5]; 5
-            0,1,2,3,4
+const arr = [1, 2, 3, 4, 5]; 
 console.log(arr.length);
 console.log(arr[0]+2); //1+2
 console.log(arr[1]+2);//2+2
