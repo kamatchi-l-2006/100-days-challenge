@@ -1,4 +1,4 @@
 const msg=(name)=>{
-    console.log("Hii" + name);
+    console.log("Hii "+ name);
 }
-msg("kamatchi");
+msg("kamz");
