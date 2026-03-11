@@ -1,2 +1,2 @@
 # 100-days-challenge
-I am going to practice my JS skills
+I solved daily coding challenges using javascript
