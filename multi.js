@@ -1,4 +1,4 @@
-const multiply=(a,b)=>{
+const mltpy=(a,b)=>{
     return a*b;
 }
-console.log(multiply(5,2));
+console.log(mltpy(5,2));
