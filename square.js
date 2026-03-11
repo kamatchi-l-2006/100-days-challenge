@@ -1,4 +1,4 @@
-const sqr=(a)=>{
-    return a*a;
+const sqr=(b)=>{
+    return b*b;
 }
 console.log(sqr(5));
