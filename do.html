@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Todo List</title>
+<style>
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:#f4f6f9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+}
+
+/* Clean container */
+.container{
+    background:white;
+    padding:30px;
+    width:380px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2{
+    text-align:center;
+    color:#333;
+}
+
+.input-section{
+    display:flex;
+    margin-top:20px;
+}
+
+input{
+    flex:1;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    outline:none;
+}
+
+button{
+    padding:10px 14px;
+    margin-left:8px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:500;
+}
+
+.add-btn{
+    background:#007bff;
+    color:white;
+}
+
+ul{
+    list-style:none;
+    padding:0;
+    margin-top:20px;
+}
+
+li{
+    background:#f8f9fa;
+    padding:12px;
+    margin-top:10px;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.complete-btn{
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    background:#28a745;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.task-text{
+    flex:1;
+    text-align:center;
+    font-size:15px;
+}
+
+.delete-btn{
+    background:#dc3545;
+    color:white;
+    padding:6px 10px;
+    border-radius:6px;
+}
+
+/* Completed style */
+.completed .task-text{
+    text-decoration:line-through;
+    color:gray;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h2>Todo List</h2>
+
+<div class="input-section">
+<input type="text" id="taskInput" placeholder="Enter a task">
+<button class="add-btn" onclick="addTask()">Add</button>
+</div>
+
+<ul id="taskList"></ul>
+</div>
+
+<script>
+
+function addTask(){
+    var input=document.getElementById("taskInput");
+    var taskValue=input.value.trim();
+
+    if(taskValue===""){
+        alert("Please enter a task");
+        return;
+    }
+
+    var li=document.createElement("li");
+
+    li.innerHTML=
+    '<div class="complete-btn" onclick="completeTask(this)"></div>'+
+    '<div class="task-text">'+taskValue+'</div>'+
+    '<button class="delete-btn" onclick="deleteTask(this)">Delete</button>';
+
+    document.getElementById("taskList").appendChild(li);
+    input.value="";
+}
+
+function deleteTask(button){
+    button.parentElement.remove();
+}
+
+function completeTask(button){
+    var li=button.parentElement;
+    li.classList.toggle("completed");
+
+    if(button.innerHTML===""){
+        button.innerHTML="✓";
+    }else{
+        button.innerHTML="";
+    }
+}
+
+</script>
+
+</body>
+</html>
