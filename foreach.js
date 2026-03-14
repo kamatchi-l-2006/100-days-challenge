@@ -4,4 +4,5 @@ arr.forEach((a)=>{
     console.log(a+2);
     return a+2;
 });
-console.log(arr);
+con
+sole.log(arr);
