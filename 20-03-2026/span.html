@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="dv">
+        <p id="cd">Paragraph 1</p>
+        <p>Paragraph 2</p>  
+        <p>Paragraph 3</p>
+        <p>paragraph 4</p>
+    </div>
+    <script>
+        const div = document.getElementById("dv");
+        const paragraph = document.getElementById("cd");
+        const span = document.createElement("span");
+        span.textContent = "New!";
+        div.insertBefore(span, paragraph);
+    </script>
+    
+</body>
+</html>

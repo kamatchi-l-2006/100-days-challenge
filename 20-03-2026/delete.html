@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click me</button>
+    <div id="a-div">
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p id="b">Paragraph 3</p>
+    </div>
+    <script>
+        const button = document.getElementById('btn');
+        button.addEventListener('click', () => {        
+        const div = document.getElementById("a-div");
+        const paragraph = document.getElementById("b");
+        div.removeChild(paragraph);
+        });
+
+
+    </script>
+    
+</body>
+</html>

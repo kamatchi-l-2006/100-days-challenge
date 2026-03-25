@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="a-list">
+        <li id="b-list">fruit</li>
+        <li>fruit</li>
+        <li>fruit</li>
+        <li>fruit</li>
+    </ul>
+    <script>
+       const li = document.createElement("li");
+       li.textContent = "Urgent Task";
+       const ul = document.getElementById("a-list");
+       const bList = document.getElementById("b-list");
+       ul.insertBefore(li, bList);
+    </script>
+    
+</body>
+</html>

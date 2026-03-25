@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>List1</h1>
+    <ul id="pt">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li id="lt">JavaScript</li>
+    </ul>
+    <h1>List2</h1>
+    <ul id="list2">
+        <li>chair</li>
+        <li>table</li>
+        <li>sofa</li>
+    </ul>
+    <script>
+        const list1 = document.getElementById("pt");
+        const list2 = document.getElementById("list2");
+        const li = document.getElementById("lt");
+        list1.removeChild(li);
+        list2.appendChild(li);
+    </script>
+</body>
+</html>
