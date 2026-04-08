@@ -1,12 +1,11 @@
 const nums = [1, 2, 3, 4];
 const newArr = nums.map((n) => {
-    if(nums%2==0){
-        return n*2;
+    if(n%2==0){
+        console.log("its even");
     }
     else{
-        return n*3;
+        console.log("its odd");
     }
-
 });
 console.log(newArr);
 console.log(nums);
