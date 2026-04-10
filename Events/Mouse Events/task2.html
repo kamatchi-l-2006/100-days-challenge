@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            flex-direction: column;
+        }
+
+        #icecream-container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background-color: pink;
+            gap:20px; 
+        }
+
+        img{
+            padding:20px;
+            height:180px;
+            width:180px;
+        }
+
+        #dv{
+            height:250px;
+            width:210px;
+            background-color: white;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding:10px; 
+        }
+
+        #dv p{
+            height:100%;
+            width:100%;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between; 
+            align-items:center;
+            text-align:center;
+            font-size:14px;
+            
+        }
+
+        button{
+            padding:6px 10px;
+            background-color:#ff4d88;
+            color:white;
+            border-radius:5px;
+        }
+
+        button:hover{
+            background-color:#e6005c;
+        }     
+    </style>
+</head>
+<body>
+    <header>
+            <h1 style="text-align: center; margin-bottom: 20px;">Choose your favorite ice cream!</h1>
+    </header>
+    <div id = "icecream-container">
+        <div id="dv">
+            <p id="ic"><img src="icecream.jpg" alt="Ice Cream"></p>
+        </div>
+        <div id="dv">
+        <p id="ic2"><img src="cone.jpg" alt="Ice Cream"></p>
+        </div>
+        <div id="dv">
+        <p id="ic3"><img src="strawberry.jpg" alt="Ice Cream"></p>
+        </div>
+        <div id="dv">
+        <p id="ic4"><img src="vannila.jpg" alt="Ice Cream"></p>
+        </div>
+    </div>
+
+    <footer>
+        <h1>Contact Us | Email: info@icecream.com</h1>
+    </footer>
+
+    <script>
+        const icecream = document.getElementById("ic");
+
+        icecream.onmouseenter = function(e){
+            e.target.innerHTML = `
+                Chocolate Ice Cream <br><br>
+                Made using cocoa, milk, sugar & cream. <br><br>
+                <button>Buy Now</button>
+            `;
+        }
+        icecream.onmouseleave = function(e){
+            e.target.innerHTML = "<img src='icecream.jpg' alt='Ice Cream'>";
+        }
+
+
+        const icecream2 = document.getElementById("ic2");
+
+        icecream2.onmouseenter = function(e){
+            e.target.innerHTML = `
+                Cone Ice Cream <br><br>
+                Made with milk, sugar & crispy cone. <br><br>
+                <button>Buy Now</button>
+            `;
+        }
+        icecream2.onmouseleave = function(e){
+            e.target.innerHTML = "<img src='cone.jpg' alt='Ice Cream'>";
+        }
+
+
+        const icecream3 = document.getElementById("ic3");
+
+        icecream3.onmouseenter = function(e){
+            e.target.innerHTML = `
+                Strawberry Ice Cream <br><br>
+                Made with fresh strawberries & cream. <br><br>
+                <button>Buy Now</button>
+            `;
+        }
+        icecream3.onmouseleave = function(e){
+            e.target.innerHTML = "<img src='strawberry.jpg' alt='Ice Cream'>";
+        }
+
+
+        const icecream4 = document.getElementById("ic4");
+
+        icecream4.onmouseenter = function(e){
+            e.target.innerHTML = `
+                Vanilla Ice Cream <br><br>
+                Made with milk, sugar & vanilla extract. <br><br>
+                <button>Buy Now</button>
+            `;
+        }
+        icecream4.onmouseleave = function(e){
+            e.target.innerHTML = "<img src='vannila.jpg' alt='Ice Cream'>";
+        }
+    </script>
+    
+</body>
+</html>
