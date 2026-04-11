@@ -55,7 +55,6 @@
             align-items:center;
             text-align:center;
             font-size:14px;
-            
         }
 
         button{
@@ -87,6 +86,26 @@
         <div id="dv">
         <p id="ic4"><img src="vannila.jpg" alt="Ice Cream"></p>
         </div>
+        <div>
+        <p id="ic5"><img src="blackcurrant.jpg" alt="Ice Cream"></p>
+        </div>
+        <div>
+        <p id="ic6"><img src="butterscoth.jpg" alt="Ice Cream"></p>
+        </div>
+        <div>
+        <p id="ic7"><img src="oreo.jpg" alt="Ice cream"></p>
+        </div>
+        <div>
+        <p id="ic8"><img src="mango.jpg" alt="Ice Cream"></p>
+        </div>  
+        <div>
+        <p id="ic9"><img src="jigar icream.jkpg.jpg" alt="Ice Cream"></p>
+        </div>  
+        <div>
+        <p id="ic10"><img src="sundae.jpg" alt="Ice Cream"></p>
+        </div>
+
+
     </div>
 
     <footer>
@@ -148,6 +167,80 @@
         icecream4.onmouseleave = function(e){
             e.target.innerHTML = "<img src='vannila.jpg' alt='Ice Cream'>";
         }
+
+            const icecream5 = document.getElementById("ic5");
+            icecream5.onmouseenter = function(e){
+                e.target.innerHTML = `
+                    Blackcurrant Ice Cream <br><br>
+                    Made with blackcurrant juice, milk & sugar. <br><br>
+                    <button>Buy Now</button>
+                `;
+            }   
+            icecream5.onmouseleave = function(e){
+                e.target.innerHTML = "<img src='blackcurrant.jpg' alt='Ice Cream'>";
+            }
+
+             const icecream6 = document.getElementById("ic6");      
+            icecream6.onmouseenter = function(e){
+                e.target.innerHTML = `
+                    Butterscotch Ice Cream <br><br>
+                    Made with butter, brown sugar & cream. <br><br>
+                    <button>Buy Now</button>
+                `;
+            }
+            icecream6.onmouseleave = function(e){
+                e.target.innerHTML = "<img src='butterscoth.jpg' alt='Ice Cream'>";
+            }
+
+                const icecream7 = document.getElementById("ic7");       
+            icecream7.onmouseenter = function(e){
+                e.target.innerHTML = `  
+                    Oreo Ice Cream <br><br>
+                    Made with crushed Oreo cookies, milk & cream. <br><br>
+                    <button>Buy Now</button>
+                `;      
+            }
+            icecream7.onmouseleave = function(e){
+                e.target.innerHTML = "<img src='oreo.jpg' alt='Ice Cream'>";
+            }
+
+                const icecream8 = document.getElementById("ic8");   
+            icecream8.onmouseenter = function(e){
+                e.target.innerHTML = `
+                    Mango Ice Cream <br><br>
+                    Made with fresh mangoes, milk & sugar. <br><br>
+                    <button>Buy Now</button>
+                `;          
+            }
+            icecream8.onmouseleave = function(e){       
+                e.target.innerHTML = "<img src='mango.jpg' alt='Ice Cream'>";
+            }
+
+                const icecream9 = document.getElementById("ic9");
+            icecream9.onmouseenter = function(e){
+                e.target.innerHTML = `
+                    Jigar Ice Cream <br><br>
+                    Made with a blend of spices, milk & sugar. <br><br>
+                    <button>Buy Now</button>
+                `;          
+            }
+            icecream9.onmouseleave = function(e){       
+                e.target.innerHTML = "<img src='jigar icream.jkpg.jpg' alt='Ice Cream'>";
+            }
+
+                const icecream10 = document.getElementById("ic10"); 
+            icecream10.onmouseenter = function(e){
+                e.target.innerHTML = `
+                    Sundae Ice Cream <br><br>
+                    Made with layers of ice cream, toppings & sauces. <br><br>
+                    <button>Buy Now</button>
+                `;
+            }
+            icecream10.onmouseleave = function(e){  
+                e.target.innerHTML = "<img src='sundae.jpg' alt='Ice Cream'>";
+            }   
+                     
+                    
     </script>
     
 </body>
